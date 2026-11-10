@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <!-- Lets the app load libmpv from Homebrew, which is signed with its own identity rather than Apple's
+       or the app's (approved by the user for direct playback of AVI, MKV, WMV and other films).
+       Code injection through DYLD_* variables and debugger attachment stay blocked by the hardened runtime. -->
+  <key>com.apple.security.cs.disable-library-validation</key><true/>
+  <!-- Reading the Photos library (iCloud Photos included) after the user allows it in the system prompt -->
+  <key>com.apple.security.personal-information.photos-library</key><true/>
+</dict></plist>

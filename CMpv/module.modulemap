@@ -1,0 +1,8 @@
+// libmpv's API headers (copied from Homebrew's mpv). The library itself is linked weakly, so the app
+// still starts without mpv; MPV.isAvailable checks for it before any call.
+module CMpv [system] {
+    header "client.h"
+    header "render.h"
+    header "render_gl.h"
+    export *
+}
